@@ -10,7 +10,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
-  height: 5000px;
 }
 
 a {
@@ -995,26 +994,24 @@ header .badges .badge img {
 
 /* FOOTER */
 footer {
-  /* width: 100%; */
+  position: relative;
+  /* 높이 값은 주지 않는다. 컨텐츠 높이 만큼 */
   padding: 32px 0 35px 0;
-  background-color: #007042;
+  background: #2c2a29;
 }
 footer .inner {
-  background-color: lightcoral;
 }
+
+/* FOOTER MENU */
 footer .inner .footer__menu {
   display: flex;
 }
 
 footer .inner .footer__menu .left {
   width: 90%;
+  /* background-color: olivedrab; */
 }
 
-footer .inner .footer__menu .right {
-  display: inline-flex;
-  justify-content: flex-end;
-  width: 10%;
-}
 footer .inner .footer__menu .left .menu {
   display: flex;
 }
@@ -1027,10 +1024,91 @@ footer .inner .footer__menu .left .menu > li > ul {
 }
 
 footer .inner .footer__menu .left .menu > li > ul > a {
+  display: block;
+  font-size: 14px;
+  color: white;
+  line-height: 40px;
 }
 
+/* footer .inner .footer__menu .left .menu > li > ul > a:hover {
+  text-decoration: underline;
+} */
+
 footer .inner .footer__menu .left .menu > li > ul > li {
+  font-size: 12px;
+  color: white;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+footer .inner .footer__menu .left .menu > li > ul > li:hover {
+  text-decoration: underline;
+}
+
+footer .inner .footer__menu .right {
+  /* display: inline-flex;
+  justify-content: flex-end; */
+  width: 10%;
+  /* background-color: lightskyblue; */
 }
 
 footer .inner .footer__menu .right .footer__logo {
+  float: right;
+}
+
+/* FOOTER SUB-MENU */
+footer .inner .footer__sub-menu {
+  padding: 40px 50px 10px 50px;
+}
+
+footer .inner .footer__sub-menu ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: white;
+}
+
+footer .inner .footer__sub-menu ul > li > a {
+  color: #ccc;
+}
+
+footer .inner .footer__sub-menu ul > li:first-child > a {
+  color: #00b050;
+  font-weight: bold;
+}
+
+footer .inner .footer__sub-menu ul > li > a:hover {
+  text-decoration: underline;
+}
+
+footer .inner .footer__sub-menu ul > li.contour {
+  color: #ccc;
+}
+
+/* FOOTER BUTTON  */
+footer .inner .footer__btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .inner .footer__btn .btn {
+  margin: 10px 2px 0 3px;
+  font-size: 12px;
+}
+
+footer .inner .footer__btn .btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* FOOTER COPYRIGHT */
+footer .inner .footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+footer .inner .footer__copyright p {
+  color: #999;
+  font-size: 12px;
+  line-height: 40px;
 }
